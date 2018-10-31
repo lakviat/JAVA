@@ -1,0 +1,29 @@
+package Practice_Purpose;
+import java.util.StringJoiner;
+import java.util.List;
+public class ConvertingStringToStringBuilder {
+    public static void main(String[] args) {
+
+        System.out.println(removeCon("Consequences"));
+
+    }
+    public static String removeCon(String word){
+        word = word.toLowerCase().trim();
+        if(word.contains(" ")){
+            System.out.println("Invalid data");
+            return "";
+        }
+        else if(word.length() < 3){
+            System.out.println("Invalid data");
+            return "";
+        }
+        else if(!word.contains("con")){
+            Stringbuilder sb = new Stringbuilder(word);
+            sb.delete(word.indexOf("con"),word.indexOf("con") + 3);
+            return sb.toString();
+        }
+        else {
+            return word;
+        }
+    }
+}
