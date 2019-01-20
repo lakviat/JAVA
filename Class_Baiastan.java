@@ -1,7 +1,10 @@
 package Arrays;
 
+import java.lang.reflect.Method;
+
 public class Class_Baiastan {
     public static void main(String[] args) {
+
 
 
         int[][] nums = {{23, 34, 23}, {34, 76, 5}};
@@ -11,10 +14,17 @@ public class Class_Baiastan {
                 System.out.print(nums[i][j] + " ");
             }
             System.out.println("");
+
+
+
+            }
+
+
+
         }
     }
 
-}
+
 
 
 
